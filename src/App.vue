@@ -16,15 +16,10 @@
         <li>
           <router-link to="/users/htmltag/">html-tag's</router-link>
         </li>
-<!--        <li>-->
-<!--          <router-link to="/users/eduardo34/posts/20">/users/eduardo34/posts/20</router-link>-->
-<!--        </li>-->
-<!--        <li>-->
-<!--          <router-link to="/users2/1001">/users2/1001</router-link>-->
-<!--        </li>-->
-<!--        <li>-->
-<!--          <router-link to="/kknd-aaa/bbb">/kknd-aaa/bbb</router-link>-->
-<!--        </li>-->
+        <li>
+          <router-link to="/users/htmlinnermanu/">html-inner_menu</router-link>
+        </li>
+
       </ul>
     </nav>
 

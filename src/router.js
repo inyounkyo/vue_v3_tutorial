@@ -4,6 +4,8 @@ import UserPost2 from './views/UserPost2.vue'
 import UserGeneric from './views/UserGeneric.vue'
 import TableTest from './views/TableTest'
 import HtmlTags from "@/views/HtmlTags";
+import InnerMenu from "@/views/InnerMenu.vue";
+
 import NotFound from './views/NotFound.vue'
 
 
@@ -12,7 +14,7 @@ export const router = createRouter({
   routes: [
     { path: '/users/htmltable/posts/:postId', component: TableTest },
     { path: '/users/htmltag/', component: HtmlTags },
-
+    { path: '/users/htmlinnermanu/', component: InnerMenu },
 
 
     { path: '/users/:username/posts/:postId', component: UserPost },
