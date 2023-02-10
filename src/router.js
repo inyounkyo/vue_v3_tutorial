@@ -6,6 +6,7 @@ import TableTest from './views/TableTest'
 import HtmlTags from "@/views/HtmlTags";
 import InnerMenu from "@/views/InnerMenu.vue";
 
+
 import NotFound from './views/NotFound.vue'
 
 
@@ -15,6 +16,17 @@ export const router = createRouter({
     { path: '/users/htmltable/posts/:postId', component: TableTest },
     { path: '/users/htmltag/', component: HtmlTags },
     { path: '/users/htmlinnermanu/', component: InnerMenu },
+    // { path: '/users/lazyload/', component: LazyLoad },
+    {
+      path: '/users/lazyload/',
+      name: 'LazyLoad',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "about" */ '@/router/LazyLoad.vue')
+    },
+
+
 
 
     { path: '/users/:username/posts/:postId', component: UserPost },
